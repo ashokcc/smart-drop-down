@@ -1,0 +1,64 @@
+body {
+  background: #f3f9fe;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+}
+.drop-down-wrapper {
+  width: 419px;
+  display: inline-block;
+}
+input {
+  padding: 10px;
+  width: 375px;
+}
+input:focus {
+  outline: none;
+}
+.input-round {
+  border-radius: 5px;
+  margin: 10px 5px 10px 5px;
+  width: 346px;
+  border: 1px solid lightblue;
+  padding-left: 30px;
+}
+.search-wrapper {
+  position: relative;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+.search-icon {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  transform: rotate(300deg);
+}
+.down-round-arrow {
+  position: relative;
+  right: 28px;
+  top: 5px;
+}
+
+.dd-options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 2px 2px 12px 2px #5f819c;
+  width: 398.4px;
+}
+
+.dd-options ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dd-options li {
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+  padding: 8px;
+}

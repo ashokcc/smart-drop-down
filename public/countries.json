@@ -1,0 +1,9 @@
+{
+  "countries": [
+    { "name": "Singapore", "code": "SG" },
+    { "name": "Indonesia", "code": "ID" },
+    { "name": "Malaysia", "code": "MY" },
+    { "name": "New Zealand", "code": "NZ" },
+    { "name": "Philippines", "code": "PH" }
+  ]
+}

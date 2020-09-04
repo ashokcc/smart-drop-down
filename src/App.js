@@ -9,6 +9,7 @@ import ShowMoreComponent from "./components/showMore";
 function App() {
   const [country, setCountry] = React.useState("");
   const [searchText, setSearchText] = React.useState("");
+  const [isUserHasAccess, setUserAccess] = React.useState(false);
   const [dropDownListLimit, setDropDownListLimit] = React.useState(3);
   const [showOptions, setShowOptions] = React.useState(false);
   const [options, setOptions] = React.useState([]);
@@ -34,6 +35,8 @@ function App() {
   async function fetchData(filterValue) {
     const response = await fetch("./countries.json");
     const { countries } = await response.json();
+    // use setUserAccess true/false based on the user permissions api
+
     if (filterValue && filterValue !== "") {
       setOptions(
         countries.filter((option) =>
@@ -118,6 +121,7 @@ function App() {
               newCountryComponent={
                 <AddNewCountryComponent
                   searchText={searchText}
+                  isUserHasAccess={isUserHasAccess}
                   addNewCountry={addNewCountry}
                 />
               }
